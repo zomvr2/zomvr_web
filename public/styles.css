@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #121212;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header > h2 {
+    color: #fff;
+    user-select: none;
+}
+
+#profile_picture {
+    width: 50px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0.2rem;
+    left: 0.2rem;
+    font-size: 10px;
+}
+
+@keyframes animation {
+    from {margin-right: 88%;}
+    to {margin-right: 10px;}
+}
